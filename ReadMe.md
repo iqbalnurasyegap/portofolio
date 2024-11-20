@@ -1,0 +1,1 @@
+Fresh Graduate S1 Teknik Informatika
