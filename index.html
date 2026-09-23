@@ -1,435 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio - Iqbal Nur Asyegap</title>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Iqbal Nur Asyegap — IT Operator, Backend Developer & System Builder.">
+  <title>Iqbal Nur Asyegap — IT Operator & Backend Developer</title>
 
-    <!-- bootstrap css cdn link  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <!-- custom css file -->
-    <link rel="stylesheet" href="css/style.css" />
+<body>
+  <div class="noise"></div>
 
-    <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Iqbal home">
+        <span class="brand-mark">IN</span>
+        <span>Iqbal<span class="accent">.</span></span>
+      </a>
 
-    <!-- bootstrap icon cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+        <i class="bi bi-list"></i>
+      </button>
 
-    <!-- for adding animation to website we have use AOS library 
-    AOS Library css file cdn link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- jquery cdn link  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  </head>
-  <body>
-    <!-- navbar starts -->
-    <nav
-      id="navbar-top"
-      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
-    >
-      <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
-          >Portfolio</a
-        >
-        <button
-          class="nav-menu d-md-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <i class="bi bi-menu-button-fill"></i>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#service">Layanan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Tentang</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-          </ul>
-        </div>
-        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
-      </div>
-    </nav>
-    <!-- navbar ends here -->
-
-    <!-- home section starts  -->
-    <section class="home pt-5 pb-5" id="home">
-      <div class="row justify-content-evenly align-middle">
-        <!-- here data-aos is used for adding aos animation  -->
-        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-          <h2 style="color: #3f396d">
-            Hello! I Am <br /><span class="c-orange">Iqbal Nur Asyegap</span>
-          </h2>
-          <p class="text-muted">
-            Saya adalah Web Developer muda dengan pengalaman menggunakan <strong>PHP &amp; CodeIgniter 4, MySQL, HTML, CSS, JavaScript</strong>, serta dasar <strong>Java</strong> dan <strong>Python</strong>. Cepat beradaptasi dalam memahami aplikasi atau web yang dikembangkan tim lain, terbiasa melakukan debugging, dan senang mempelajari teknologi baru.
-          </p>
-          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            Hire Me
-          </button>
-          <a href="#portfolio" class="link ms-4 d-none d-md-inline">See My Work</a>
-        </div>
-        <div class="col-10 col-md-4 d-none d-md-block">
-          <img src="images/iqbal.jpeg" class="img-fluid" alt="Foto Iqbal" />
-        </div>
-      </div>
-    </section>
-    <!-- home section ends here -->
-
-    <!-- expertise section starts -->
-    <section class="expertise mt-5" id="service">
-      <div class="heading text-center">
-        <small>Keahlian saya</small>
-        <h3>
-          Menyediakan Berbagai <br />
-          Layanan Digital
-        </h3>
-      </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-10 col-md-4" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon4.png"
-                class="w-25 img-fluid img"
-                alt="Database Icon"
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Pengelolaan Database</h4>
-              <p class="text-muted">
-                Desain, pengelolaan, dan pengoptimalan database MySQL/SQL untuk kebutuhan perusahaan.
-              </p>
-              <a href="#about" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- NEW SERVICE CARD: Web Development -->
-        <div class="col-md-4 col-10" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon1.png"
-                class="w-25 img-fluid img"
-                alt="Web Icon"
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Web Development</h4>
-              <p class="text-muted">
-                Pembuatan dan pemeliharaan website menggunakan PHP, CodeIgniter 4, HTML, CSS, dan JavaScript.
-              </p>
-              <a href="#portfolio" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-10" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon2.png"
-                class="w-25 img-fluid img"
-                alt="Android Icon"
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Android Development</h4>
-              <p class="text-muted">
-                Pengembangan aplikasi mobile berbasis Android menggunakan Java &amp; Firebase.
-              </p>
-              <a href="#portfolio" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- expertise section ends here -->
-
-    <!-- skill section starts -->
-    <section class="skill mt-5 py-5" id="about">
-      <div class="row justify-content-evenly">
-        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
-          <!-- First Row -->
-          <div class="row justify-content-evenly">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <br />
-                <span class="text">HTML &amp; CSS</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <br />
-                <span class="text">JavaScript</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second Row -->
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <br />
-                <span class="text">Java</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3  ms-md-0">
-                <br>
-                <span class="text">MySQL</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Third Row: NEW SKILLS -->
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <br />
-                <span class="text">PHP &amp; CodeIgniter 4</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3  ms-md-0">
-                <br>
-                <span class="text">Python</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Fourth Row: NEW SKILLS -->
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <br />
-                <span class="text">Data Analysis (Excel/SQL)</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3  ms-md-0">
-                <br>
-                <span class="text">Debugging &amp; Troubleshooting</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-          <div class="heading mt-5 mt-md-3">
-            <small>My Skills</small>
-            <p class="text-muted">
-              Saya adalah seorang profesional muda yang memiliki keahlian dalam pengembangan perangkat lunak, pengelolaan basis data, dan analisis data. Berpengalaman memperbaiki modul penting dalam SIAKAD serta berkontribusi pada pelaporan PDDIKTI.
-            </p>
-            <p class="text-muted">
-              Untuk lebih detailnya bisa download CV dibawah ini.
-            </p>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              <a
-                href="cvIT.pdf"
-                download="IqbalNurAsyegap_CV"
-                style="text-decoration: none;color: #fff;"
-                >Download CV</a
-              >
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- skill section end here -->
-
-    <!-- portfolio section starts here (unchanged) -->
-    <section class="portfolio" id="portfolio">
-      <div class="heading text-center pt-5">
-        <small>Karya Kreatif</small>
-        <h3>Check My Portfolio</h3>
-      </div>
-
-      <div id="myBtnContainer" class="text-center mt-4">
-        <button class="filter-item" data-filter="all">All</button>
-        <button class="filter-item" data-filter="webapp">Android App</button>
-        <button class="filter-item" data-filter="website">Web App</button>
-      </div>
-      <div class="portfolio-body">
-        <div class="row justify-content-evenly px-4">
-          <!-- Portfolio items remain the same -->
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/WebbApp.png" class="card-img-top" alt="Klinik App" />
-              <div class="card-body text-center">
-                <h4 class="card-title">Klinik App</h4>
-                <span class="badge bg-secondary">HTML & CSS</span>
-                <span class="badge bg-secondary">PHP</span>
-                <span class="badge bg-secondary">Framework CI4</span>
-                <span class="badge bg-secondary">Website</span>
-                <br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/androidApp.jpeg" class="card-img-top" alt="Donor Darah App" />
-              <div class="card-body text-center">
-                <h4 class="card-title">Pencarian Donor Darah App</h4>
-                <span class="badge bg-secondary">Java</span>
-                <span class="badge bg-secondary">Firebase</span>
-                <span class="badge bg-secondary">Android App</span>
-                <br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- portfolio section ends here -->
-
-    <!-- contact section starts (unchanged) -->
-    <section class="contact py-5" id="contact">
-      <div class="heading text-center">
-        <small>Hubungi saya</small>
-        <h3>Ada pertanyaan? Jangan Ragu untuk Menghubungi</h3>
-      </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-geo-alt-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>Dusun II Blok Pahing, Desa Pamenkang, Mundu, Cirebon</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-telephone-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>+62 82118490093</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-send-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>iqbalnurasyegap009@gmail.com</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
-          <div class="contact-form">
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Name"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="E-mail"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Mobile No."
-              />
-            </div>
-            <div class="mb-3">
-              <textarea
-                class="form-control"
-                placeholder="Message"
-                rows="5"></textarea>
-            </div>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              Submit
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- contact section ends here -->
-
-    <!-- back to top button -->
-    <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
-      <i class="bi bi-arrow-up"></i>
-    </button>
-
-    <!-- footer section starts  -->
-    <footer class="text-center text-muted py-4">
-      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
-      <div class="link-group mt-5" data-aos="fade-up">
-        <a href="#home">Beranda</a>
-        <div class="vr"></div>
-        <a href="#about">Tentang</a>
-        <div class="vr"></div>
-        <a href="#service">Layanan</a>
-        <div class="vr"></div>
-        <a href="#portfolio">Portfolio</a>
-        <div class="vr"></div>
+      <div class="nav-links" id="navLinks">
+        <a class="active" href="#home">Home</a>
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </div>
-      <div class="social-links mt-5" data-aos="fade-up">
-        <button onclick="window.location.href='https://wa.me/6282118490093?text=Halo%20saya%20ingin%20bertanya'" class="rounded-pill whatsapp">
-          <i class="bi bi-whatsapp"></i> Hubungi Saya
-        </button>
+
+      <a class="nav-cta" href="#contact">Let's talk <i class="bi bi-arrow-up-right"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> AVAILABLE FOR SELECTED PROJECTS</div>
+        <h1>Building digital systems that <span class="accent">actually work.</span></h1>
+        <p class="hero-lead">
+          Saya Iqbal Nur Asyegap — IT Operator & Backend Developer yang fokus
+          pada web application, database, academic systems, dan problem solving.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">Explore my work <i class="bi bi-arrow-down-right"></i></a>
+          <a class="text-link" href="cvIT.pdf" download="IqbalNurAsyegap_CV.pdf">Download CV <i class="bi bi-download"></i></a>
+        </div>
+
+        <div class="hero-meta">
+          <span><i class="bi bi-geo-alt"></i> Cirebon, Indonesia</span>
+          <span class="dot"></span>
+          <span>IT • Backend • Systems</span>
+        </div>
       </div>
-      <hr class="text-muted my-4" />
-      <p>Copyright 2024 Portfolio | All Rights Reserved.</p>
-    </footer>
-    <!-- footer section ends here -->
 
-    <!-- bootstrap javascript cdn link  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"></script>
+      <div class="hero-visual">
+        <div class="profile-card">
+          <div class="profile-top">
+            <span>PROFILE / 01</span>
+            <span>2026</span>
+          </div>
+          <div class="portrait-wrap">
+            <div class="portrait-glow"></div>
+            <img src="images/iqbal.jpeg" alt="Foto Iqbal Nur Asyegap">
+          </div>
+          <div class="profile-bottom">
+            <div>
+              <strong>Iqbal Nur Asyegap</strong>
+              <span>IT Operator / Developer</span>
+            </div>
+            <span class="profile-index">01—</span>
+          </div>
+        </div>
 
-    <!-- AOS library javascript link  -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      // initializing AOS library
-      AOS.init({
-        duration: 1000,
-        offset: 50,
-      });
-    </script>
-    <!-- custom js file linking -->
-    <script src="js/script.js"></script>
-  </body>
+        <div class="floating-note note-one">
+          <span>01</span>
+          <strong>Backend</strong>
+          <small>PHP / Laravel / CI4</small>
+        </div>
+
+        <div class="floating-note note-two">
+          <i class="bi bi-database"></i>
+          <span>Data & Systems</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Areas of expertise">
+      <div class="ticker-track">
+        <span>BACKEND DEVELOPMENT</span><b>✦</b>
+        <span>DATABASE</span><b>✦</b>
+        <span>ACADEMIC SYSTEM</span><b>✦</b>
+        <span>PROBLEM SOLVING</span><b>✦</b>
+        <span>WEB APPLICATION</span><b>✦</b>
+        <span>BACKEND DEVELOPMENT</span><b>✦</b>
+        <span>DATABASE</span><b>✦</b>
+      </div>
+    </section>
+
+    <section class="section container work-section" id="work">
+      <div class="section-head">
+        <div>
+          <span class="section-number">01 / SELECTED WORK</span>
+          <h2>Projects with a <span class="accent">purpose.</span></h2>
+        </div>
+        <p>Beberapa project yang merepresentasikan cara saya membangun, memperbaiki, dan menyederhanakan sistem.</p>
+      </div>
+
+      <div class="projects">
+        <article class="project project-large">
+          <div class="project-image">
+            <img src="images/WebbApp.png" alt="Preview Klinik App">
+            <span class="project-tag">WEB APP</span>
+          </div>
+          <div class="project-info">
+            <div>
+              <span class="project-no">01</span>
+              <h3>Klinik App</h3>
+            </div>
+            <p>Web application untuk pengelolaan data dan proses operasional klinik.</p>
+            <div class="tech-list"><span>PHP</span><span>CodeIgniter 4</span><span>MySQL</span></div>
+            <a href="#" class="project-link" data-project="Klinik App">View project <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-image">
+            <img src="images/androidApp.jpeg" alt="Preview aplikasi pencarian donor darah">
+            <span class="project-tag">ANDROID</span>
+          </div>
+          <div class="project-info">
+            <div><span class="project-no">02</span><h3>Donor Darah Finder</h3></div>
+            <p>Aplikasi Android untuk membantu menemukan donor darah terdekat menggunakan perhitungan jarak.</p>
+            <div class="tech-list"><span>Java</span><span>Firebase</span><span>Google Maps</span></div>
+            <a href="#" class="project-link" data-project="Donor Darah Finder">View project <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project project-dark">
+          <div class="project-visual-code">
+            <span>01</span>
+            <code>system.<b>solve</b>(problem);</code>
+          </div>
+          <div class="project-info">
+            <div><span class="project-no">03</span><h3>Academic Systems</h3></div>
+            <p>Pengembangan dan maintenance modul SIAKAD, pelaporan PDDIKTI, serta workflow akademik.</p>
+            <div class="tech-list"><span>CodeIgniter</span><span>MySQL</span><span>cPanel</span></div>
+            <a href="#contact" class="project-link">Discuss a system <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stack-section" id="stack">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-number">02 / TOOLBOX</span>
+            <h2>Tools I use to <span class="accent">build.</span></h2>
+          </div>
+          <p>Bukan sekadar daftar teknologi — fokus saya adalah memilih tools yang tepat untuk menyelesaikan masalah.</p>
+        </div>
+
+        <div class="stack-grid">
+          <div class="stack-item"><span>01</span><i class="bi bi-filetype-php"></i><strong>PHP</strong><small>Backend</small></div>
+          <div class="stack-item"><span>02</span><i class="bi bi-layers"></i><strong>Laravel</strong><small>Web Framework</small></div>
+          <div class="stack-item"><span>03</span><i class="bi bi-code-square"></i><strong>CodeIgniter 4</strong><small>Web Framework</small></div>
+          <div class="stack-item"><span>04</span><i class="bi bi-database"></i><strong>MySQL</strong><small>Database</small></div>
+          <div class="stack-item"><span>05</span><i class="bi bi-filetype-py"></i><strong>Python</strong><small>Programming</small></div>
+          <div class="stack-item"><span>06</span><i class="bi bi-filetype-js"></i><strong>JavaScript</strong><small>Frontend</small></div>
+          <div class="stack-item"><span>07</span><i class="bi bi-phone"></i><strong>Java / Android</strong><small>Mobile</small></div>
+          <div class="stack-item"><span>08</span><i class="bi bi-file-earmark-spreadsheet"></i><strong>Excel / SQL</strong><small>Data</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section container" id="about">
+      <div class="about-label">
+        <span class="section-number">03 / ABOUT ME</span>
+        <div class="big-mark">IN<span>.</span></div>
+      </div>
+
+      <div class="about-copy">
+        <h2>Turning messy problems into <span class="accent">usable systems.</span></h2>
+        <p class="lead">
+          Saya lulusan S1 Teknik Informatika yang bekerja di area IT operations dan
+          pengembangan sistem. Pekerjaan saya berada di titik temu antara teknologi,
+          data, dan kebutuhan pengguna.
+        </p>
+        <p>
+          Saya terbiasa menangani SIAKAD, PDDIKTI, database, debugging, serta
+          pengembangan fitur sesuai kebutuhan operasional. Di sisi development,
+          saya terus memperdalam backend development dengan PHP, Laravel, dan CodeIgniter,
+          sambil mengeksplorasi Python.
+        </p>
+
+        <div class="principles">
+          <div><span>01</span><strong>Understand first.</strong><small>Pahami masalah sebelum menulis kode.</small></div>
+          <div><span>02</span><strong>Build simply.</strong><small>Sistem yang baik tidak harus rumit.</small></div>
+          <div><span>03</span><strong>Keep learning.</strong><small>Teknologi berubah. Skill harus ikut tumbuh.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section">
+      <div class="container">
+        <span class="section-number">04 / EXPERIENCE</span>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="year">NOW</span>
+            <div><h3>IT Operator / System Support</h3><p>Akademi Kebidanan Isma Husada Cirebon</p></div>
+            <p class="timeline-detail">SIAKAD • PDDIKTI • Database • Web • Academic Systems</p>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2026</span>
+            <div><h3>Backend Development Focus</h3><p>Laravel • CodeIgniter 4 • MySQL • Python</p></div>
+            <p class="timeline-detail">Building practical applications and improving engineering fundamentals.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2024</span>
+            <div><h3>S1 Informatics Engineering</h3><p>Universitas Nahdlatul Ulama Cirebon</p></div>
+            <p class="timeline-detail">Software development, databases, mobile development, and information systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <div>
+          <span class="section-number">05 / CONTACT</span>
+          <h2>Have a system<br>worth <span class="accent">building?</span></h2>
+        </div>
+        <div class="contact-copy">
+          <p>Untuk project, kolaborasi, pekerjaan teknis, atau sekadar diskusi teknologi — let's talk.</p>
+          <a class="email-link" href="mailto:iqbalnurasyegap009@gmail.com">iqbalnurasyegap009@gmail.com <i class="bi bi-arrow-up-right"></i></a>
+          <div class="socials">
+            <a href="https://wa.me/6282118490093" target="_blank" rel="noopener">WhatsApp <i class="bi bi-arrow-up-right"></i></a>
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub <i class="bi bi-arrow-up-right"></i></a>
+            <a href="#top">Back to top <i class="bi bi-arrow-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>© 2026 Iqbal Nur Asyegap</span>
+    <span>Designed & built with intent.</span>
+  </footer>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-box">
+      <button class="modal-close" data-close-modal aria-label="Tutup"><i class="bi bi-x-lg"></i></button>
+      <span class="section-number">PROJECT NOTE</span>
+      <h3 id="modalTitle">Project</h3>
+      <p>Detail project dapat diisi dengan studi kasus, problem, solusi, stack, dan hasil ketika project sudah siap dipublikasikan.</p>
+      <a href="#contact" class="btn btn-primary" data-close-modal>Let's discuss <i class="bi bi-arrow-up-right"></i></a>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
